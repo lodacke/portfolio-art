@@ -202,3 +202,12 @@ header > * {
     transform: scale(1.2);
     transform-style: ease;
 }
+
+/* FOOTER */
+
+footer{
+    height: 20vh;
+    margin-top: 100px;
+    width: 100%;
+    background-color: black;
+}
