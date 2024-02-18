@@ -1,8 +1,8 @@
 
 import { header } from "./utilities/variables.js";
 import { footer } from "./utilities/variables.js";
-import { renderAbout } from "./about.js"
-import { renderWork } from "./work.js";
+import { renderAbout } from "./pages/about.js"
+import { renderWork } from "./pages/work.js";
 
 export function renderHeader (){
     header.innerHTML= `

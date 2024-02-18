@@ -1,5 +1,5 @@
-import { swapStyleSheet } from "./utilities/cssSwap.js";
-import { wrapper } from "./utilities/variables.js";
+import { swapStyleSheet } from "../utilities/cssSwap.js";
+import { wrapper } from "../utilities/variables.js";
 
 export function renderLandingpage(){
 
