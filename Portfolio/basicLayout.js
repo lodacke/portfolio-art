@@ -1,6 +1,6 @@
 
-import { header } from "./variables.js";
-import { footer } from "./variables.js";
+import { header } from "./utilities/variables.js";
+import { footer } from "./utilities/variables.js";
 import { renderAbout } from "./about.js"
 import { renderWork } from "./work.js";
 

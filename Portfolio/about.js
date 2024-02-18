@@ -1,4 +1,4 @@
-import { wrapper } from "./variables.js";
+import { wrapper } from "./utilities/variables.js";
 
 export function renderAbout (){
     wrapper.innerHTML = ``;

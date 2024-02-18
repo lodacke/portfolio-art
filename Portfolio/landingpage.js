@@ -1,6 +1,10 @@
-import { wrapper } from "./variables.js";
+import { swapStyleSheet } from "./utilities/cssSwap.js";
+import { wrapper } from "./utilities/variables.js";
 
 export function renderLandingpage(){
+
+    swapStyleSheet("CSS/landningpage.css");
+
     wrapper.innerHTML = `
     <div id="landingpage">
         <div id="welcomeNote">
@@ -11,11 +15,10 @@ export function renderLandingpage(){
                 <h1> <i> Dacke </i> </h1>
             </div>
             <div class="breadNote">
-                <p> Here is a collection of work that I prevoiusly have made to... </p>
             </div>
         </div>
         <div class="landingpageImg">
-        <img class="landingpageimgTAG" src="/media/artwork/image1.jpg"
+        <img class="landingpageimgTAG" src="./media/artwork/image1.jpg"
         </div>
     </div>`;
 
