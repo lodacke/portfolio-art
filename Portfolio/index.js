@@ -7,10 +7,10 @@ export function renderHeader (){
     <header>
         <h1 class="headerBranding">LD.</h1>
         <ul class="nav-menu">
-            <li class="nav-item">
-                <a href="#" class="nav-link" class="work"> WORK</a>
+            <li class="nav-item work">
+                <a href="#" class="nav-link"> WORK</a>
             </li>
-            <li class="nav-item" class="about"> 
+            <li class="nav-item about"> 
             <a href="#" class="nav-link"> ABOUT</a>
             </li>
             <li class="nav-item">
@@ -34,6 +34,13 @@ export function renderHeader (){
             <span class="bar"></span>
         </header>`;
 
+        document.querySelector("li.about").addEventListener("click", () => {
+        renderAbout();
+        });
+        document.querySelector("li.work").addEventListener("click", () => {
+        renderWork();
+        });
+
         const hamburger = document.querySelector(".hamburger");
         const navMenu = document.querySelector(".nav-menu");
         const navLink = document.querySelectorAll(".nav-link");
@@ -53,13 +60,6 @@ export function renderHeader (){
 
         }))
 
-        document.querySelector(".about").addEventListener( click, () => {
-        renderAbout()
-    })
-
-        document.querySelector(".work").addEventListener( click, () => {
-        renderAbout()
-    })
 }
 
 export function renderLandingpage(){
@@ -88,15 +88,15 @@ export function renderLandingpage(){
 
     let strings = [
         {
-        img: "/media/artwork/image5.jpg",
+        img: "/Portfolio/media/artwork/image5.jpg",
         alt: "image of birds"
         }, 
         {
-        img: "/media/artwork/image3.jpg",
+        img: "/Portfolio//media/artwork/image3.jpg",
         alt:"image"
         }
         , {
-        img: "/media/artwork/image4.jpg",
+        img: "/Portfolio/media/artwork/image4.jpg",
         alt: "image of hands",
     }];
 
