@@ -1,0 +1,23 @@
+.topContent{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.info{
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-top: 60px;
+    padding: 20px;
+    box-sizing: content-box;
+    margin-bottom: 300px;
+}
+
+
+h1{
+    font-size: 50px;
+}
+
+img{
+    height: 650px;
+}

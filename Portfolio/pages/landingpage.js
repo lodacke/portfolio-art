@@ -18,33 +18,48 @@ export function renderLandingpage(){
             </div>
         </div>
         <div class="landingpageImg">
-        <img class="landingpageimgTAG" src="./media/artwork/image1.jpg"
+        <img class="landingpageimgTAG" src="./media/artwork/forstamorgonen.jpg"
         </div>
+    </div>
+</div>
+    <div class="LPcontent">
+        <img src="./media/artwork/Mazetti.jpg">
+        <img src="./media/artwork/sovrummet.jpg">
+    <div class="blackwhite">
+        <img class="img1"src= "./media/artwork/duvor.jpg">
+        <img class="img2" src= "./media/artwork/blames.jpg">   
+    </div>
+       
     </div>`;
 
 
-    let imgDOM = document.querySelector("img");
+    let imgDOM = document.querySelector("img.landingpageimgTAG");
 
     let i = 0;
 
     let strings = [
         {
-        img: "/Portfolio/media/artwork/image5.jpg",
-        alt: "image of birds"
+        img: "/Portfolio/media/artwork/spelplanen1.PNG",
+        alt: "checkers"
         }, 
         {
-        img: "/Portfolio//media/artwork/image3.jpg",
-        alt:"image"
-        }
-        , {
-        img: "/Portfolio/media/artwork/image4.jpg",
-        alt: "image of hands",
-    }];
+        img: "/Portfolio//media/artwork/spelplan2.PNG",
+        alt:"checkers"
+        }];
 
     setInterval(() => {
-        imgDOM.src = strings[i % strings.length].img;
-        imgDOM.alt = strings[i % strings.length].alt;
-        i++;
+        imgDOM.style.transition = 'opacity 0.5s ease-in-out';
+        imgDOM.style.opacity = 0; 
+
+        setTimeout(() => {
+            imgDOM.src = strings[i % strings.length].img;
+            imgDOM.alt = strings[i % strings.length].alt;
+
+            setTimeout(() => {
+                imgDOM.style.opacity = 1;
+            }, 100); 
+            i++;
+        }, 500); 
     }, 3000);
-    
+
 }

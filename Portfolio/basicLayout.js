@@ -3,6 +3,7 @@ import { header } from "./utilities/variables.js";
 import { footer } from "./utilities/variables.js";
 import { renderAbout } from "./pages/about.js"
 import { renderWork } from "./pages/work.js";
+import { renderLandingpage } from "./pages/landingpage.js";
 
 export function renderHeader (){
     header.innerHTML= `
@@ -70,6 +71,13 @@ export function renderHeader (){
 
 export function renderFooter (){
     footer.innerHTML = `
+    <div class="footerR">
+        <p>LD.</p>
+    </div>
+    <div class="footerL">
+    <p> Email: lo.dacke@mail.com </p>
+    <p> Insta: @lodacke </p>
+    </div>
         `;
 }
 

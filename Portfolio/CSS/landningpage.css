@@ -54,11 +54,24 @@
 
 }
 
-.landingpageimgTAG {
-    transition: transform 0.3s ease; 
+.LPcontent{
+    display: flex;
+    flex-direction: column;
 }
 
-.landingpageimgTAG:hover {
-    transform: scale(1.2);
-    transform-style: ease;
+.img1{
+    width: 40%;
+    margin-bottom: -160px;
+}
+
+.img2 {
+    width: 28%;
+    margin-bottom: 160px;
+}
+
+.blackwhite{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
